@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv= "X-UA-Compatible" content= "IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML EMAIL</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e6e6e6;
+        }
+        table {
+            border-spacing: 0;
+        }
+        td {
+            padding: 0;
+        }
+        img {
+            border: 0;
+        }
+        input {
+            font-size: 15px;
+            height: 20px;
+            width: 230px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .wrapper {
+            width: 100%;
+            max-width: 1800px;
+            table-layout: fixed;
+            background-color: #e6e6e6;
+            padding-top: 10px;
+        }
+        .webkit {
+            width: 98%;
+            height: 98%;
+            background-color: white;
+        }
+        .outer {
+            Margin: 0 auto;
+            width: 98%;
+            max-width: 1800px;
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: #333333;
+
+        }
+
+        .image1 {
+            width: 350px; 
+            max-width: 350px;
+            height: 120px; 
+            margin-right:50px; 
+            margin-top: 30px;
+            
+        }
+
+        .image2 {
+            width: 290px; 
+            max-width: 250px; 
+            margin-top: -20px;
+            float: right;
+            margin-right: 30px;
+            
+        }
+
+        .inner {
+            padding-left: 40px;
+            padding-top: 50px;
+            width: 100%;
+            max-width: 1800px;
+            border-spacing: 0;
+            color: #94cc7a; 
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        .column1 {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 1800px;
+            margin-left: -30px;
+            color: #333333; 
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .paragraph1{
+            margin-left: 100px;
+            width: 100%;
+            padding-right: 20px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .column2 {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .bold{
+        font-weight: bold;
+        font-size: 21px;
+        }
+        .bullet{
+            margin-top: 7px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 18;
+        }
+        .bullet2{
+        font-family: sans-serif;
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+        font-weight: lighter;
+        font-size: 18;
+        }
+        ul{
+        margin:0;
+        margin-left: 10px; 
+        }
+        .column3{
+            width: 100%;
+            max-width: 1800px;
+        }
+        .hr1{
+        float:left; 
+        margin-left:30px;  
+        height:4px;
+        width:90%;
+        border-width:0;
+        background-color:#f2b600;
+        }
+
+        .Question_Mark{
+        width: 45px;
+        max-width: 45px;
+        height: 50px;
+        padding-left: 30px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        }
+        .box {
+            background-color: forestgreen; 
+            color: white; 
+            padding: 10px; 
+            max-width: 300px; 
+            height: 220px;
+        }
+
+        .last-column{
+            padding-left: 20px;
+        }
+
+        .Apobiologix{
+        display: block;
+        width:300px;
+        height:70px;
+            
+        }
+        .Apobiologix2{
+            display: none;
+        }
+        .Grastofil{
+        display: block;
+        width: 270px;
+        margin-left: auto;
+        height: 80px;
+        }
+        .Grastofil2{
+            display: none;
+        }
+        .PAAB{
+        display: block;
+        width: 150px;
+        margin-top: 80px;
+        height: 60px;
+        padding-bottom: 100px;
+        }
+        .PAAB2{
+            display: none;
+        }
+        .block2{
+            display: none;
+        }
+        .block1{
+            display: block;
+            padding-top: 30px;
+        }
+        .box2{
+            display: none;;
+        }
+
+        @media only screen and (max-width: 930px ){
+            .image2{
+                display: none;
+            }
+            .box {
+                display: none;
+            }
+            .image1{
+                padding-bottom: 20px;
+            }
+            .box2{
+                display: block;
+                background-color: forestgreen; 
+                color: white; 
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-top: 30px;
+                margin-right:20px auto;
+                height: auto;
+                margin-left: 20px auto;
+            }
+            .hr1{
+                display: block;
+                margin-right: 30px;
+                margin-left: 30px;
+            }
+
+
+        }
+
+        @media only screen and (max-width: 800px ){
+            .block1{
+                display: none;
+            }
+            .block2{
+                text-align: center;
+                font-size: 18px;
+                display: block;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .image1{
+                margin: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .par1{
+                font-size: 21px;
+            }
+            .PAAB {
+                display: none;
+            }
+            .Grastofil{
+                display: none;
+            }
+            .Apobiologix{
+                display: none;
+            }
+            .Apobiologix2{
+            margin-top: 50px;
+            display: block;
+            width:300px;
+            height:70px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            .Grastofil2{
+            margin-top: 50px;
+            display: block;
+            width: 270px;
+            height: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100px;
+            }
+            .PAAB2{
+            margin-top: 50px;
+            display: block;
+            width: 150px;
+            height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            }
+    
+    </style>
+</head>
+
+<body>
+    
+    <center class="wrapper">
+        <div class="webkit">
+            <table class="outer" algin="center">
+                <tr>
+                    <td>
+                        <table class="inner">
+                            <tr>
+                                <td class="paragraph1" > <span class="par1">
+                                    NOW COVERED IN BRITISH COLUMBIA
+                                    <span style="font-weight: lighter;"  >(special authorization)</span>
+                                        </span>
+                                    <table class="column1">
+                                        <tr>
+                                            <td>
+                                                <img src="Assets/images/Grastofil.png" alt="logo" class="image1">
+                                            </td>
+                                            <td class="block1">
+                                                Canada’s first 
+                                                biosimilar of Neupogen
+                                            
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="block2">
+                                                Canada’s first 
+                                                biosimilar of Neupogen
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                               </td>
+                               <td>
+                                   
+                                <img src="Assets/images/bear.png" alt="bear" algin="right" class="image2">
+                               </td>
+                           </tr>
+                        </table> 
+                        <table width = "100%">
+                            <tr>
+                                <td>
+                                    <div style="line-height: 1.5; margin:auto; background-color: #e0a631; width: 95%; min-width: 95%; font-weight: bold; font-size: 19px;">
+                                        <div style="padding: 20px;">
+                                        Apobiologix<sup>&reg;</sup> is pleased to announce
+                                        that <span style="color: white">Grastofil<sup>&reg;</sup> is now covered</span> under the BC PharmaCare Limited Coverage Drug Program. For details on coverage criteria, visit <a class="link" href="www.gov.bc.ca"><span style="color: white">www.gov.bc.ca</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="column2">
+                            <tr>
+                                <td style="font-size: 19px;">
+                                    <span class="bold">Apobiologix<sup>&reg;</sup> supports your patients</span> <br/>
+                                    Your Grastofil<sup>&reg;</sup> patients are also supported through the ANSWERS patient support program, which:
+                                    <ul>
+                                    <li class="bullet">Offers comprehensive reimbursement assistance. </li>
+                                    <li class="bullet2">Helps maximizes access and minimizes time
+                                    to treatment.</li>
+                                    </ul>
+                                    Enrol your patients in the ANSWERS patient support
+                                    program today! Visit <a class="link" href="apoanswers.ca"><span style="color:black; font-weight: bold">apoanswers.ca</span></a>.
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="column3">
+                            <tr>
+                                <td rowspan="2">
+                                    <hr class="hr1"><br/>
+
+                                    <table width="100%" style="max-width: 500px; font-size: 19px;">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img class="Question_Mark" src="Assets/images/question mark.png" alt="Question Mark">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  style="float: left; padding-left: -100px;">
+                                                <span style="font-weight: bold;">Questions?</span><br/>
+                                                Contact your Apobiologix<sup>&reg;</sup> Biosimilar Consultant:
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="Enter your name"><br/>
+                                                <input type="text" placeholder="Enter your address"><br/>
+                                                <input type="text" placeholder="Enter your phone number"><br/>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table width= "100%">
+                                        <tr>
+                                            <td>
+                                                <hr class="hr1"><br/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td rowspan="6">
+                                    <div class="box">
+                                        <div style=" line-height: 1.8; font-weight: bold; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: white; height: 180px; padding-top: 30px; text-align: center;">
+                                            Grastofil<sup>&reg;</sup> is developed and marketed by 
+                                            Apobiologix<sup>&reg;</sup>,a Canadian pharmaceutical 
+                                            company dedicated to biosimilars.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="box2">
+                                        <div style=" line-height: 1.8; font-weight: bold; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; border-style: solid; border-color: white; height: auto; padding-top: auto; text-align: center;">
+                                            Grastofil<sup>&reg;</sup> is developed and marketed by 
+                                            Apobiologix<sup>&reg;</sup>,a Canadian pharmaceutical 
+                                            company dedicated to biosimilars.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="line-height: 1.2; padding: 30px">
+                                    <u>Indications and clinical use:</u></span><br/><br/>
+                                        Grastofil<sup>&reg;</sup> (filgrastim) is indicated for the following:<br/><br/>
+                                        <span style="font-weight: bold">Cancer Patients Receiving Myelosuppressive Chemotherapy</span>
+                                        Grastofil<sup>&reg;</sup> is indicated to decrease the incidence of infection, as manifested 
+                                        by febrile neutropenia, in patients with non-myeloid malignancies receiving myelosuppressive 
+                                        anti-neoplastic drugs.<br/><br/>
+                                        Grastofil<sup>&reg;</sup> is indicated in adult and pediatric patients with cancer receiving 
+                                        myelosuppressive chemotherapy.<br/><br/>
+                                        A complete blood count (CBC) and platelet count should be obtained prior to chemotherapy and 
+                                        twice per week during Grastofil<sup>&reg;</sup> therapy to avoid leukocytosis and to monitor 
+                                        the neutrophil count. In phase 3 clinical studies, filgrastim therapy was discontinued when 
+                                        the ANC was > 10 x 10<sup>9</sup>/L after expected chemotherapy-induced nadir.<br/><br/>
+                                        Please consult the complete Product Monograph at 
+                                        <a style="color:#00b5f2" href="https:// health-products.canada.ca/dpd-bdpp/index-eng.jsp">
+                                            https:// health-products.canada.ca/dpd-bdpp/index-eng.jsp</a> 
+                                            for complete indications, contraindications, warnings, precautions, 
+                                            adverse reactions, interactions, dosing and conditions of clinical use. The Product 
+                                            Monograph is also available by calling DISpedia, Apotex's Drug Information Service, at: 
+                                            1-800-667-4708.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="line-height: 1.8; padding-left: 30px">
+                                    &copy; 2017, Apotex Technologies Inc. <br/>
+                                    Apobiologix<sup>&reg;</sup> and Grastofil<sup>&reg;</sup> are trademarks 
+                                    of Apotex Technologies Inc. <br/>
+                                     Neupogen is a trademark of Amgen Inc.
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="last-column" width= "100%">
+                            <tr> 
+                                <td>
+                                    <img class="Apobiologix" src="Assets/images/Apobiologix.png" alt="Question Mark">
+                                </td>
+                                <td >
+                                    <img class="PAAB" src="Assets/images/PAAB.png" alt="Question Mark">
+                                </td>
+                                <td>
+                                    <img class="Grastofil" src="Assets/images/Grastofil.png" alt="Question Mark">
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class="Apobiologix2" src="Assets/images/Apobiologix.png" alt="Question Mark">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class="PAAB2" src="Assets/images/PAAB.png" alt="Question Mark">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class="Grastofil2" src="Assets/images/Grastofil.png" alt="Question Mark">
+                                </td>
+                            </tr>
+                        </table>
+                        </td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    
+</body>
+
+</html>
